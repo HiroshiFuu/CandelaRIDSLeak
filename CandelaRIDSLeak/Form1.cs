@@ -135,6 +135,7 @@ namespace CandelaRIDSLeak
             logEvent("resetTest", "goodToContinue", goodToContinue.ToString());
         }
 
+        #region Logging Func
         private void logging(string remarks, string para)
         {
             using (System.IO.StreamWriter file = new System.IO.StreamWriter(@".\log.txt", true))
@@ -196,6 +197,7 @@ namespace CandelaRIDSLeak
                 file.WriteLine();
             }
         }
+        #endregion 
 
         private void tabControl1_Selected(object sender, TabControlEventArgs e)
         {
@@ -850,7 +852,6 @@ namespace CandelaRIDSLeak
             {
                 valveAll_InputOpen();
                 label = resultLeakAll;
-
             }
 
             else
@@ -907,20 +908,6 @@ namespace CandelaRIDSLeak
 
             label.Refresh();
             return isGood;
-        }
-
-        private void waits(int mili)
-        {
-            Stopwatch sw = Stopwatch.StartNew();
-            while (sw.ElapsedMilliseconds < 1000)
-            { 
-                Application.DoEvents(); 
-            }
-        }
-
-        void standBy(long milliseconds)
-        {
-            Stopwatch sw = Stopwatch.StartNew();
         }
 
         bool continuityTest(int channel)
@@ -993,6 +980,20 @@ namespace CandelaRIDSLeak
             return isGood;
         }
 
+        private void waits(int mili)
+        {
+            Stopwatch sw = Stopwatch.StartNew();
+            while (sw.ElapsedMilliseconds < 1000)
+            {
+                Application.DoEvents();
+            }
+        }
+
+        void standBy(long milliseconds)
+        {
+            Stopwatch sw = Stopwatch.StartNew();
+        }
+
         bool analyseAteQOutput(out string testPressure, out string result)
         {
             bool returnVal = true;
@@ -1025,16 +1026,13 @@ namespace CandelaRIDSLeak
                     {
                         result = response.Substring(22, 3);
                     }
-
                 }
             }
-
             catch
             {
                 MessageBox.Show("No response from AteQ detected.");
                 returnVal = false;
             }
-
             return returnVal;
         }
 
@@ -1065,6 +1063,8 @@ namespace CandelaRIDSLeak
             logging("start leakTest(0)", testPassed.ToString());
 
             if (chkLeakTestAll.Checked) testPassed = leakTest(0);
+    
+            testPassed = true;  //all channel leak test no longer a condition for testPassed
 
             logging("leakTest(0) done", testPassed.ToString());
 
@@ -1087,10 +1087,12 @@ namespace CandelaRIDSLeak
                 logEvent("chkContinuityTest Done", "testPassed", testPassed.ToString());
             }
             logEvent("all tests done", "timer1.Enabled", timer1.Enabled.ToString());
+
             rightIn(false);
             rightDown(false);
             leftDown(false);
             lblFinalResult.ForeColor = Color.White;
+
             if (testPassed)
             {
                 lblFinalResult.Text = "PASSED";
@@ -1105,7 +1107,8 @@ namespace CandelaRIDSLeak
             lblFinalResult.Refresh();
             timer1.Enabled = true;
             logEvent("testing done", "timer1.Enabled", timer1.Enabled.ToString());
-            // open file and write out the test resultes
+
+            // open file and write out the test results
             writeResults();
         }
 

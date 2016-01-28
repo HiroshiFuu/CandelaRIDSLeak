@@ -22,3 +22,13 @@ H:\CandelaRIDSLeak\CandelaRIDSLeak\obj\x86\Release\CandelaRIDSLeak.exe
 H:\CandelaRIDSLeak\CandelaRIDSLeak\obj\x86\Release\CandelaRIDSLeak.pdb
 F:\CandelaRIDSLeak\CandelaRIDSLeak\bin\Release\CandelaRIDSLeak.exe.config
 F:\CandelaRIDSLeak\CandelaRIDSLeak\obj\x86\Release\CandelaRIDSLeak.csprojResolveAssemblyReference.cache
+C:\Users\FENG0\Google Drive\CandelaRIDSLeak\CandelaRIDSLeak\bin\Release\CandelaRIDSLeak.exe.config
+C:\Users\FENG0\Google Drive\CandelaRIDSLeak\CandelaRIDSLeak\obj\x86\Release\CandelaRIDSLeak.exe
+C:\Users\FENG0\Google Drive\CandelaRIDSLeak\CandelaRIDSLeak\obj\x86\Release\CandelaRIDSLeak.pdb
+C:\Users\FENG0\Google Drive\CandelaRIDSLeak\CandelaRIDSLeak\bin\Release\CandelaRIDSLeak.exe
+C:\Users\FENG0\Google Drive\CandelaRIDSLeak\CandelaRIDSLeak\bin\Release\CandelaRIDSLeak.pdb
+C:\Users\FENG0\Google Drive\CandelaRIDSLeak\CandelaRIDSLeak\bin\Release\Automation.BDaq.dll
+C:\Users\FENG0\Google Drive\CandelaRIDSLeak\CandelaRIDSLeak\obj\x86\Release\CandelaRIDSLeak.csprojResolveAssemblyReference.cache
+C:\Users\FENG0\Google Drive\CandelaRIDSLeak\CandelaRIDSLeak\obj\x86\Release\CandelaRIDSLeak.Form1.resources
+C:\Users\FENG0\Google Drive\CandelaRIDSLeak\CandelaRIDSLeak\obj\x86\Release\CandelaRIDSLeak.Properties.Resources.resources
+C:\Users\FENG0\Google Drive\CandelaRIDSLeak\CandelaRIDSLeak\obj\x86\Release\CandelaRIDSLeak.csproj.GenerateResource.Cache
