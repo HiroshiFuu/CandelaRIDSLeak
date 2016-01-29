@@ -1062,9 +1062,7 @@ namespace CandelaRIDSLeak
 
             logging("start leakTest(0)", testPassed.ToString());
 
-            if (chkLeakTestAll.Checked) testPassed = leakTest(0);
-    
-            testPassed = true;  //all channel leak test no longer a condition for testPassed
+            if (chkLeakTestAll.Checked) leakTest(0);
 
             logging("leakTest(0) done", testPassed.ToString());
 
