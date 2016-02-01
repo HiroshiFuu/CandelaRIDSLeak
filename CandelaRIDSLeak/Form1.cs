@@ -141,7 +141,7 @@ namespace CandelaRIDSLeak
             using (System.IO.StreamWriter file = new System.IO.StreamWriter(@".\log.txt", true))
             {
                 file.WriteLine(remarks + " @ " + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff"));
-                if (remarks.CompareTo("testing") == 0)
+                if (para != "none")
                     file.WriteLine("testPassed " + para);
                 file.WriteLine("goodToContinue " + goodToContinue);
                 file.WriteLine("  Y    M    C    K");
@@ -1066,14 +1066,12 @@ namespace CandelaRIDSLeak
 
             logging("leakTest(0) done", testPassed.ToString());
 
-            if (!testPassed)
-            {
-                if (chkLeakTestY.Checked && goodToContinue) testPassed &= leakTest(1);
-                if (chkLeakTestM.Checked && goodToContinue) testPassed &= leakTest(2);
-                if (chkLeakTestC.Checked && goodToContinue) testPassed &= leakTest(3);
-                if (chkLeakTestK.Checked && goodToContinue) testPassed &= leakTest(4);
-                logEvent("chkLeakTest Done", "testPassed", testPassed.ToString());
-            }
+            testPassed = true;
+            if (chkLeakTestY.Checked && goodToContinue) testPassed &= leakTest(1);
+            if (chkLeakTestM.Checked && goodToContinue) testPassed &= leakTest(2);
+            if (chkLeakTestC.Checked && goodToContinue) testPassed &= leakTest(3);
+            if (chkLeakTestK.Checked && goodToContinue) testPassed &= leakTest(4);
+            logEvent("chkLeakTest Done", "testPassed", testPassed.ToString());
 
             if (chkContinuityTestY.Checked || chkContinuityTestM.Checked || chkContinuityTestC.Checked || chkContinuityTestK.Checked)
             {
