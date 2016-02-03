@@ -39,6 +39,7 @@ namespace CandelaRIDSLeak
         bool last_safetyCurtainCrossed_1, last_safetyCurtainCrossed_2;
         bool last_leftIsUp, last_leftIsDown;
         bool last_safetyCurtainCrossed, last_leftCylinderPos;
+        bool testStarted;
          
         public Form1()
         {
@@ -132,6 +133,7 @@ namespace CandelaRIDSLeak
             leftCylinderPos = last_leftCylinderPos = true;
             last_leftIsUp = last_leftIsDown = true;
             timer1.Start();
+            testStarted = false;
             logEvent("resetTest", "goodToContinue", goodToContinue.ToString());
         }
 
@@ -245,19 +247,19 @@ namespace CandelaRIDSLeak
                 last_leftIsDown = leftIs_Down;
                 logEvent("leftCylinderPos", "leftIs Up/Down", leftIs_Up + "/" + leftIs_Down);
             }
-            if (safetyCurtainCrossed && leftCylinderPos)
+            if (safetyCurtainCrossed && leftCylinderPos && testStarted)
                 emergencyStop();
 
             // Cylinders positions
             if (leftIs_Up) chkLeftCylinder.BackColor = Color.Green;
-            if (leftIs_Down) chkLeftCylinder.BackColor = Color.Red; 
-            if (rightIsUp()) chkRightCylinder.BackColor = Color.Green; 
-            if (rightIsDown()) chkRightCylinder.BackColor = Color.Red; 
-            if (rightIsRetracted()) chkNeedleCylinder.BackColor = Color.Green; 
-            if (rightIsInserted()) chkNeedleCylinder.BackColor = Color.Red; 
+            if (leftIs_Down) chkLeftCylinder.BackColor = Color.Red;
+            if (rightIsUp()) chkRightCylinder.BackColor = Color.Green;
+            if (rightIsDown()) chkRightCylinder.BackColor = Color.Red;
+            if (rightIsRetracted()) chkNeedleCylinder.BackColor = Color.Green;
+            if (rightIsInserted()) chkNeedleCylinder.BackColor = Color.Red;
 
-            if (AteQ_Passed()) label23.BackColor = Color.Green; 
-            if (AteQ_Failed()) label24.BackColor = Color.Green; 
+            if (AteQ_Passed()) label23.BackColor = Color.Green;
+            if (AteQ_Failed()) label24.BackColor = Color.Green;
             if (AteQ_AlarmRaised()) label24.BackColor = Color.Green;
         }
 
@@ -1039,6 +1041,7 @@ namespace CandelaRIDSLeak
         void startTest()
         {
             // All test begins with the left cylinder being press down first.
+            testStarted = true;
             timer1.Enabled = true;
             logEvent("Test started", "timer1.Enabled", timer1.Enabled.ToString());
             bool testPassed = false;
@@ -1062,16 +1065,19 @@ namespace CandelaRIDSLeak
 
             logging("start leakTest(0)", testPassed.ToString());
 
-            if (chkLeakTestAll.Checked) leakTest(0);
+            if (chkLeakTestAll.Checked) testPassed = leakTest(0);
 
             logging("leakTest(0) done", testPassed.ToString());
 
-            testPassed = true;
-            if (chkLeakTestY.Checked && goodToContinue) testPassed &= leakTest(1);
-            if (chkLeakTestM.Checked && goodToContinue) testPassed &= leakTest(2);
-            if (chkLeakTestC.Checked && goodToContinue) testPassed &= leakTest(3);
-            if (chkLeakTestK.Checked && goodToContinue) testPassed &= leakTest(4);
-            logEvent("chkLeakTest Done", "testPassed", testPassed.ToString());
+            if (!testPassed)
+            {
+                testPassed = true;
+                if (chkLeakTestY.Checked && goodToContinue) testPassed &= leakTest(1);
+                if (chkLeakTestM.Checked && goodToContinue) testPassed &= leakTest(2);
+                if (chkLeakTestC.Checked && goodToContinue) testPassed &= leakTest(3);
+                if (chkLeakTestK.Checked && goodToContinue) testPassed &= leakTest(4);
+                logEvent("chkLeakTest Done", "testPassed", testPassed.ToString());
+            }
 
             if (chkContinuityTestY.Checked || chkContinuityTestM.Checked || chkContinuityTestC.Checked || chkContinuityTestK.Checked)
             {
