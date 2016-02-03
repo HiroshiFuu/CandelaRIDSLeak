@@ -1,38 +1,9 @@
-C:\搜狗高速下载\CandelaRIDSLeak\CandelaRIDSLeak\bin\Release\CandelaRIDSLeak.exe
-C:\搜狗高速下载\CandelaRIDSLeak\CandelaRIDSLeak\bin\Release\CandelaRIDSLeak.pdb
-C:\搜狗高速下载\CandelaRIDSLeak\CandelaRIDSLeak\obj\x86\Release\CandelaRIDSLeak.Form1.resources
-C:\搜狗高速下载\CandelaRIDSLeak\CandelaRIDSLeak\obj\x86\Release\CandelaRIDSLeak.Properties.Resources.resources
-C:\搜狗高速下载\CandelaRIDSLeak\CandelaRIDSLeak\obj\x86\Release\CandelaRIDSLeak.csproj.GenerateResource.Cache
-C:\搜狗高速下载\CandelaRIDSLeak\CandelaRIDSLeak\obj\x86\Release\CandelaRIDSLeak.exe
-C:\搜狗高速下载\CandelaRIDSLeak\CandelaRIDSLeak\obj\x86\Release\CandelaRIDSLeak.pdb
-F:\CandelaRIDSLeak\CandelaRIDSLeak\obj\x86\Release\CandelaRIDSLeak.exe
-F:\CandelaRIDSLeak\CandelaRIDSLeak\obj\x86\Release\CandelaRIDSLeak.pdb
-F:\CandelaRIDSLeak\CandelaRIDSLeak\bin\Release\CandelaRIDSLeak.exe
-F:\CandelaRIDSLeak\CandelaRIDSLeak\bin\Release\CandelaRIDSLeak.pdb
-F:\CandelaRIDSLeak\CandelaRIDSLeak\obj\x86\Release\CandelaRIDSLeak.Form1.resources
-F:\CandelaRIDSLeak\CandelaRIDSLeak\obj\x86\Release\CandelaRIDSLeak.Properties.Resources.resources
-F:\CandelaRIDSLeak\CandelaRIDSLeak\obj\x86\Release\CandelaRIDSLeak.csproj.GenerateResource.Cache
-H:\CandelaRIDSLeak\CandelaRIDSLeak\bin\Release\CandelaRIDSLeak.exe.config
-H:\CandelaRIDSLeak\CandelaRIDSLeak\bin\Release\CandelaRIDSLeak.exe
-H:\CandelaRIDSLeak\CandelaRIDSLeak\bin\Release\CandelaRIDSLeak.pdb
-H:\CandelaRIDSLeak\CandelaRIDSLeak\obj\x86\Release\CandelaRIDSLeak.Form1.resources
-H:\CandelaRIDSLeak\CandelaRIDSLeak\obj\x86\Release\CandelaRIDSLeak.Properties.Resources.resources
-H:\CandelaRIDSLeak\CandelaRIDSLeak\obj\x86\Release\CandelaRIDSLeak.csproj.GenerateResource.Cache
-H:\CandelaRIDSLeak\CandelaRIDSLeak\obj\x86\Release\CandelaRIDSLeak.exe
-H:\CandelaRIDSLeak\CandelaRIDSLeak\obj\x86\Release\CandelaRIDSLeak.pdb
-F:\CandelaRIDSLeak\CandelaRIDSLeak\bin\Release\CandelaRIDSLeak.exe.config
-F:\CandelaRIDSLeak\CandelaRIDSLeak\obj\x86\Release\CandelaRIDSLeak.csprojResolveAssemblyReference.cache
-C:\Users\FENG0\Google Drive\CandelaRIDSLeak\CandelaRIDSLeak\bin\Release\CandelaRIDSLeak.exe.config
-C:\Users\FENG0\Google Drive\CandelaRIDSLeak\CandelaRIDSLeak\obj\x86\Release\CandelaRIDSLeak.exe
-C:\Users\FENG0\Google Drive\CandelaRIDSLeak\CandelaRIDSLeak\obj\x86\Release\CandelaRIDSLeak.pdb
-C:\Users\FENG0\Google Drive\CandelaRIDSLeak\CandelaRIDSLeak\bin\Release\CandelaRIDSLeak.exe
-C:\Users\FENG0\Google Drive\CandelaRIDSLeak\CandelaRIDSLeak\bin\Release\CandelaRIDSLeak.pdb
-C:\Users\FENG0\Google Drive\CandelaRIDSLeak\CandelaRIDSLeak\bin\Release\Automation.BDaq.dll
-C:\Users\FENG0\Google Drive\CandelaRIDSLeak\CandelaRIDSLeak\obj\x86\Release\CandelaRIDSLeak.csprojResolveAssemblyReference.cache
-C:\Users\FENG0\Google Drive\CandelaRIDSLeak\CandelaRIDSLeak\obj\x86\Release\CandelaRIDSLeak.Form1.resources
-C:\Users\FENG0\Google Drive\CandelaRIDSLeak\CandelaRIDSLeak\obj\x86\Release\CandelaRIDSLeak.Properties.Resources.resources
-C:\Users\FENG0\Google Drive\CandelaRIDSLeak\CandelaRIDSLeak\obj\x86\Release\CandelaRIDSLeak.csproj.GenerateResource.Cache
 C:\Users\rr\Documents\GitHub\CandelaRIDSLeak\CandelaRIDSLeak\bin\Release\CandelaRIDSLeak.exe.config
+C:\Users\rr\Documents\GitHub\CandelaRIDSLeak\CandelaRIDSLeak\bin\Release\CandelaRIDSLeak.exe
+C:\Users\rr\Documents\GitHub\CandelaRIDSLeak\CandelaRIDSLeak\bin\Release\CandelaRIDSLeak.pdb
+C:\Users\rr\Documents\GitHub\CandelaRIDSLeak\CandelaRIDSLeak\bin\Release\Automation.BDaq.dll
+C:\Users\rr\Documents\GitHub\CandelaRIDSLeak\CandelaRIDSLeak\obj\x86\Release\CandelaRIDSLeak.Form1.resources
+C:\Users\rr\Documents\GitHub\CandelaRIDSLeak\CandelaRIDSLeak\obj\x86\Release\CandelaRIDSLeak.Properties.Resources.resources
+C:\Users\rr\Documents\GitHub\CandelaRIDSLeak\CandelaRIDSLeak\obj\x86\Release\CandelaRIDSLeak.csproj.GenerateResource.Cache
 C:\Users\rr\Documents\GitHub\CandelaRIDSLeak\CandelaRIDSLeak\obj\x86\Release\CandelaRIDSLeak.exe
 C:\Users\rr\Documents\GitHub\CandelaRIDSLeak\CandelaRIDSLeak\obj\x86\Release\CandelaRIDSLeak.pdb
-C:\Users\rr\Documents\GitHub\CandelaRIDSLeak\CandelaRIDSLeak\obj\x86\Release\CandelaRIDSLeak.csprojResolveAssemblyReference.cache
